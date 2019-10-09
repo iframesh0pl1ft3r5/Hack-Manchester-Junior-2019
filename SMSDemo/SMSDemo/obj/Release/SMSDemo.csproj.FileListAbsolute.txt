@@ -1,0 +1,14 @@
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\bin\Release\SMSDemo.exe.config
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\bin\Release\SMSDemo.exe
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\bin\Release\SMSDemo.pdb
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\bin\Release\Clockwork.dll
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\bin\Release\MaterialSkin.dll
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\bin\Release\Clockwork.pdb
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.csprojAssemblyReference.cache
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.Form1.resources
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.Properties.Resources.resources
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.csproj.GenerateResource.cache
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.csproj.CopyComplete
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.exe
+C:\Users\Matthew\source\repos\SMSDemo\SMSDemo\obj\Release\SMSDemo.pdb
