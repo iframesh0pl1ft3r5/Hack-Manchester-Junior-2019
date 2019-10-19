@@ -11,3 +11,16 @@ C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Ju
 C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\New folder\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.exe
 C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\New folder\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.xml
 C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\New folder\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.pdb
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\bin\Debug\Group Manager Windows.exe.config
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\bin\Debug\Group Manager Windows.exe
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\bin\Debug\Group Manager Windows.pdb
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\bin\Debug\Group Manager Windows.xml
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\bin\Debug\MaterialSkin.dll
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.vbprojAssemblyReference.cache
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group_Manager_Windows.Form1.resources
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group_Manager_Windows.Resources.resources
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.vbproj.GenerateResource.cache
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.vbproj.CopyComplete
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.exe
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.xml
+C:\Users\joshu\OneDrive\Documents\#~~ Projects ~~#\github.com\Hack-Manchester-Junior-2019\Group Manager Windows\Group Manager Windows\obj\Debug\Group Manager Windows.pdb

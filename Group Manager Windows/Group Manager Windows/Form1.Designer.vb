@@ -25,8 +25,8 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.SuspendLayout()
         '
         'ListView1
@@ -35,9 +35,16 @@ Partial Class Form1
         Me.ListView1.LargeImageList = Me.ImageList1
         Me.ListView1.Location = New System.Drawing.Point(0, 64)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(504, 264)
+        Me.ListView1.Size = New System.Drawing.Size(754, 350)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "record.png")
+        Me.ImageList1.Images.SetKeyName(1, "document.png")
         '
         'MaterialRaisedButton1
         '
@@ -50,13 +57,6 @@ Partial Class Form1
         Me.MaterialRaisedButton1.TabIndex = 1
         Me.MaterialRaisedButton1.Text = "Refresh"
         Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
-        '
-        'ImageList1
-        '
-        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList1.Images.SetKeyName(0, "record.png")
-        Me.ImageList1.Images.SetKeyName(1, "document.png")
         '
         'Form1
         '
