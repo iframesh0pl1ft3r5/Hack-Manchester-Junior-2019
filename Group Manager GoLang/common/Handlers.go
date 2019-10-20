@@ -1,11 +1,14 @@
 package handlers
 
 import (
+	"crypto/md5"
+	"database/sql"
 	"fmt"
 	"net/http"
 
 	helpers "../helpers"
 	repos "../repos"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/securecookie"
 )
 
@@ -46,6 +49,15 @@ func RegisterPageHandler(response http.ResponseWriter, request *http.Request) {
 	fmt.Fprintf(response, body)
 }
 
+// Name - struct used by the MySQL system
+type Name struct {
+	Name string `json:"name"`
+}
+
+type Nametwo struct {
+	Nametwo int `json:"name"`
+}
+
 // for POST
 func RegisterHandler(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
@@ -59,7 +71,6 @@ func RegisterHandler(w http.ResponseWriter, r *http.Request) {
 		RegisterPageHandler(w, r)
 
 	} else {
-
 		_uName, _email, _pwd, _confirmPwd := false, false, false, false
 		_uName = !helpers.IsEmpty(uName)
 		_email = !helpers.IsEmpty(email)
@@ -67,10 +78,38 @@ func RegisterHandler(w http.ResponseWriter, r *http.Request) {
 		_confirmPwd = !helpers.IsEmpty(confirmPwd)
 
 		if _uName && _email && _pwd && _confirmPwd {
-			fmt.Fprintln(w, "Username for Register : ", uName)
-			fmt.Fprintln(w, "Email for Register : ", email)
-			fmt.Fprintln(w, "Password for Register : ", pwd)
-			fmt.Fprintln(w, "ConfirmPassword for Register : ", confirmPwd)
+			var NextID int
+			if pwd == confirmPwd {
+				db, err := sql.Open("mysql", "hack:HackManchester2019@tcp(10.0.2.58:3306)/group_mgr")
+				if err != nil {
+				}
+				defer db.Close()
+				results, err := db.Query("SELECT MAX(ID) from users")
+				for results.Next() {
+					var name Nametwo
+					// for each row, scan the result into our tag composite object
+					err = results.Scan(&name.Nametwo)
+					if err != nil {
+					} else {
+						NextID = name.Nametwo
+					}
+				}
+				NextID = NextID + 1
+				data := []byte(pwd)
+				hashedPwd := md5.Sum(data)
+				pass := fmt.Sprintf("%x", hashedPwd)
+				pwd = pass
+				//insert into users VALUES(
+				formatted := fmt.Sprintf("insert into users VALUES(\"%d\",\"%s\",\"%s55fedg\",\"001\",\"null\",\"null\",\"%s\");", NextID, uName, pwd, email)
+				results, err = db.Query(formatted)
+				http.Redirect(w, r, "../../../", 302)
+			} else {
+				fmt.Fprintln(w, "Passwords do not match!")
+			}
+			//fmt.Fprintln(w, "Username for Register : ", uName)
+			//fmt.Fprintln(w, "Email for Register : ", email)
+			//fmt.Fprintln(w, "Password for Register : ", pwd)
+			//fmt.Fprintln(w, "ConfirmPassword for Register : ", confirmPwd)
 		} else {
 			fmt.Fprintln(w, "This fields can not be blank!")
 		}
@@ -84,7 +123,7 @@ func IndexPageHandler(response http.ResponseWriter, request *http.Request) {
 		var indexBody, _ = helpers.LoadFile("templates/index.html")
 		fmt.Fprintf(response, indexBody, userName)
 	} else {
-		http.Redirect(response, request, "/", 302)
+		http.Redirect(response, request, "/about", 302)
 	}
 }
 
