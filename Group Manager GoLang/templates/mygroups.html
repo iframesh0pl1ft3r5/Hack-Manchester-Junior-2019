@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GroupManager [Dark UI]</title>
+    <link rel="icon" type="image/png" sizes="1200x1270" href="assets/img/coop.png">
+    <link rel="icon" type="image/png" sizes="1200x1270" href="assets/img/coop.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomaspark/bootswatch@v3.4.1/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+</head>
+
+<body style="background-color: rgb(54,54,54);">
+    <nav class="navbar navbar-default" data-aos="slide-down" style="background-color: rgba(38,38,38,0.47);">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html" style="color: rgb(201,201,201);"><i class="fa fa-group"></i>&nbsp;GroupManager</a><button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="index.html" style="color: rgba(224,222,222,0.41);">Home</a></li>
+                    <li role="presentation"></li>
+                    <li role="presentation"></li>
+                    <li class="active" role="presentation"></li>
+                    <li role="presentation"><a href="#" style="color: rgb(255,253,253);">Groups</a></li>
+                    <li role="presentation"><a class="learn-more" role="button" data-toggle="modal" href="#logout"  style="color: rgba(224,222,222,0.41);">Welcome back, {{.user}}()</a></li>
+                    <li role="presentation"></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="jumbotron hero" style="background-image: url(&quot;assets/img/eGNkeoo%20[TEST1].png&quot;);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-7 phone-preview">
+                    <div class="iphone-mockup"><img class="device" src="assets/img/s4.svg">
+                        <div class="screen"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-pull-3 get-it">
+                    <h1>Your groups</h1>
+                    <p>Here are your groups:</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="phphaters">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Confirm</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Joining 'PHP Haters Official'</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">join</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="logout">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Logout</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Are you sure you want to log out?</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">Logout</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="network">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Confirm</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Joining '127.0.0.1 - Cloud and Web'</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">Join</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="maths">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Confirm</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Joining 'Mathematics Manchester'</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">Join</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="laptops">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Confirm</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Joining 'Laptop Group'</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">Join</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="gaming">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Confirm</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Joining 'Gaming Group'</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">Join</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="golang">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Confirm</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-muted" style="color: rgb(58,58,58);">Joining 'Golang Group'</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><button class="btn btn-primary" type="button">Join</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-boxed" style="background-color: rgb(54,54,54);">
+        <div class="container" style="background-color: rgb(54,54,54);">
+            <div class="row features">
+                <div class="col-md-4 col-sm-6 item">
+                    <div data-aos="fade-right" class="box" style="filter: brightness(100%) grayscale(0%) hue-rotate(88deg) invert(0%);background-image: url(&quot;assets/img/eGNkeoo%20[TEST1].png&quot;);opacity: 1;"><i class="material-icons icon" style="color: rgb(255,255,255);">laptop</i>
+                        <h3 class="name" style="color: rgb(255,255,255);">Laptop Enthusiasts Group</h3>
+                        <p class="description" style="color: rgb(186,186,186);">We like laptops. Join today!</p><a class="learn-more" role="button" data-toggle="modal" href="#laptops"  style="color: rgb(251,251,251);">Goto
+&gt;&gt;</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div data-aos="fade" class="box" style="filter: brightness(100%) grayscale(0%) hue-rotate(234deg) invert(0%);background-image: url(&quot;assets/img/eGNkeoo%20[TEST1].png&quot;);opacity: 1;"><i class="material-icons icon" style="color: rgb(255,255,255);">videogame_asset</i>
+                        <h3 class="name" style="color: rgb(255,255,255);">Gaming Group</h3>
+                        <p class="description" style="color: rgb(186,186,186);">Like gaming? Join here.</p><a class="learn-more" role="button" data-toggle="modal" href="#gaming"  style="color: rgb(251,251,251);">Goto &gt;&gt;</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div data-aos="fade" class="box" style="filter: brightness(100%) grayscale(0%) hue-rotate(322deg) invert(0%);background-image: url(&quot;assets/img/eGNkeoo%20[TEST1].png&quot;);opacity: 1;"><i class="fab fa-php icon" style="color: rgb(255,255,255);"></i>
+                        <h3 class="name" style="color: rgb(255,255,255);">I hate PHP Official</h3>
+                        <p class="description" style="color: rgb(186,186,186);">We need to stop PHP, Join today!</p><a class="learn-more" role="button" data-toggle="modal" href="#phphaters"  style="color: rgb(251,251,251);">Goto
+&gt;&gt;</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div data-aos="fade" class="box" style="filter: brightness(100%) grayscale(0%) hue-rotate(88deg) invert(0%);background-image: url(&quot;assets/img/eGNkeoo%20[TEST1].png&quot;);opacity: 1;"><i class="fas fa-server icon" style="color: rgb(255,255,255);"></i>
+                        <h3 class="name" style="color: rgb(255,255,255);">127.0.0.1</h3>
+                        <p class="description" style="color: rgb(186,186,186);">Like servers and networking? Join today.</p><a class="learn-more" role="button" data-toggle="modal" href="#network"  style="color: rgb(251,251,251);">Goto
+&gt;&gt;</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="testimonials">
+        <h2 class="text-center" style="color: rgb(200,186,186);"></h2>
+    </section>
+    <footer class="bounce animated site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5 style="color: rgb(214,213,213);">iframeSh0pl1ft3r5 (2019)</h5>
+                </div>
+                <div class="col-sm-6 social-icons"><a href="https://twitter.com/sh0pl1ft3r5"><i class="fa fa-twitter"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>

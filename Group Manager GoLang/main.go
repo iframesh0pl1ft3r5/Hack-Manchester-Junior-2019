@@ -23,7 +23,7 @@ func main() {
 	router.HandleFunc("/register", common.RegisterHandler).Methods("POST")
 
 	router.HandleFunc("/logout", common.LogoutHandler).Methods("POST")
-
+	initGroups()
 	// Making the assets folder work.
 	// Location of local file
 	fs := http.FileServer(http.Dir("./assets/"))

@@ -35,7 +35,7 @@ func LoginHandler(response http.ResponseWriter, request *http.Request) {
 
 		if _userIsValid {
 			SetCookie(name, response)
-			redirectTarget = "/index"
+			redirectTarget = "/groups"
 		} else {
 			redirectTarget = "/register"
 		}
